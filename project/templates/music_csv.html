@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Export Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(to right, #ccffbd, #7ec850); /* Light green color gradient */
+        }
+        .container {
+            font-family: 'Arial', sans-serif;
+        }
+        .table {
+            --bs-table-color: #334d00; /* Darker green for text */
+            --bs-table-bg: #ccffbd; /* Light green background for tables */
+            --bs-table-border-color: #285c00; /* Green border color */
+            border-radius: 0.75rem;
+            overflow: hidden;
+        }
+        footer {
+            margin-top: 20px;
+            color: #285c00;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container text-center">
+    <h4>Hello, {{ user }}</h4>
+    <p>Your music export is ready! Below are the details of the albums and songs you requested:</p>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Album Title</th>
+                <th>Description</th>
+                <th>Owner</th>
+                <th>Songs_Title</th>
+                <th>Songs_Artist</th>
+                <th>Songs_Genre</th>
+                <th>Songs_Release Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for album in data %}
+            <tr>
+                <td>{{ album.Album_Title }}</td>
+                <td>{{ album.Album_Description }}</td>
+                <td>{{ album.Album_User }}</td>
+                <td>{{ album.Album_Songs.Song_Title }}</td>
+                <td>{{ album.Album_Songs.Song_Artist }}</td>
+                <td>{{ album.Album_Songs.Song_Genere}}</td>
+                <td>{{ album.Album_Songs.Song_Releasedate }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p>Please find the attached music.csv file with this email for all the details.</p>
+    <div>Thanks and Regards,<br>
+        <i>IITM-Band</i> Team
+    </div>
+    <footer>&copy; IITM-Band 2024</footer>
+  </div>
+</body>
+</html>

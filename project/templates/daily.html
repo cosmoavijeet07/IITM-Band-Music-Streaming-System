@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Music Check-In</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #ccffd8, #e8ffe5);
+            font-family: 'Arial', sans-serif;
+            color: #245850;
+        }
+        h4, h6 {
+            margin-top: 20px;
+        }
+        p {
+            margin-top: 10px;
+        }
+        footer {
+            margin-top: 20px;
+            color: #2a5934;
+        }
+        .container {
+            background-color: #f0fff5;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+
+<body>
+<div class="container text-center">
+    <h4>Daily Lyrics Discovery</h4>
+    <h6>Good Day, <b>{{ user }}</b>!</h6>
+    <p>Have you checked out today's top lyrics on <i>IITM-Band</i>? Discover new depths in your favorite songs.</p>
+    <p>Every day brings a new chance to connect with music that moves you.</p>
+
+    <p><b>Today's Tip:</b> Did you know that understanding the lyrics can enhance your music experience? Dive in now!</p>
+    <p>Visit <i>IITM-Band</i> to explore the lyrics and meanings behind today's hits.</p>
+    
+    <div>Best Wishes,
+        <i>IITM-Band</i> Team
+    </div>
+    <footer>&copy; IITM-Band 2024</footer>
+</div>
+</body>
+</html>

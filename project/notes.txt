@@ -1,0 +1,35 @@
+{
+  "email": "efg@efg.com",
+  "username" : "efg",
+  "password" : "qwerty",
+  "role": "user"
+}
+
+{
+  "title": "Example Album",
+  "description": "This is a test album",
+  "user_id": 1,
+  "song_names": ["Song 1", "Song 2", "Song 3"]
+}
+
+
+{
+  "title": "Example Album",
+  "description": "This is a test album",
+  "user_id": 4,
+  "song_names": []
+}
+
+{
+  "email": "ijk@ijk.com",
+  "password" : "qwerty"
+}
+
+{
+  "title": "New Song",
+  "artist": "Test Artist",
+  "lyrics": "These are the lyrics of the new song.",
+  "genre": "Pop",
+  "user_id": 123,
+  "album_id": 456
+}
