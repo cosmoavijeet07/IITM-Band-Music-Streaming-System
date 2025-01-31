@@ -1,3 +1,7 @@
+# Project Demo
+https://youtu.be/jdo9vxdTYQ0
+
+
 # Project Setup
 
 This guide covers the setup for the complete development environment including the Vue.js frontend, Mailhog, a Python application, and Celery with Redis as the broker.
